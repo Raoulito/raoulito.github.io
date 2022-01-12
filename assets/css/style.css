@@ -11,6 +11,7 @@ font-family: 'Raleway', sans-serif;
 
 body 
 {
+    overflow-x: hidden;
     font-size: 18px;
 }
 
@@ -395,7 +396,7 @@ h1
 }
 
 .activite-list .column article h3 {
-    padding: 21px;
+    padding: 10px;
     margin: 0px;
 }
 
@@ -412,8 +413,8 @@ h1
 
 footer {
     background-color: #F2F2F2;
-    margin: 0px -50px;
-    padding: 50px;
+    margin: 0px 0px;
+ /*   padding: 50px;*/
     display: flex;
     justify-content: space-between;
 }
@@ -553,6 +554,7 @@ footer .column {
     }
     
     footer {
+        flex-direction: column;
         width: 100%;
     }
 }
