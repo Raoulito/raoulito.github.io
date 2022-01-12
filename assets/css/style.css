@@ -414,6 +414,7 @@ h1
 footer {
     background-color: #F2F2F2;
     margin: 0px 0px;
+    white-space: nowrap;
  /*   padding: 50px;*/
     display: flex;
     justify-content: space-between;
