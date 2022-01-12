@@ -152,11 +152,6 @@ h1
     align-items: center;
 }
 
-.titrefiltre
-{
-    justify-content: flex-start;
-}
-
 .filtre /* Dessine la bordure grise autour des filtres */
 {
     box-sizing: border-box; /* Padding inclus pour que ça soit plus simple, lol */
@@ -438,28 +433,35 @@ footer .column ul li a {
 @media screen and (max-widht:992px)
 {
 
-#hebergement {
-    flex-direction: column;
-}
+    body {
+        overflow-x: hidden;
+    }
 
-#activite .activite-list {
-    flex-wrap: wrap;
-    height: auto;
-}
+    #hebergement {
+      flex-direction: column;
+    }
 
-#activite .activite-list .column {
-    width: 48%;
-}
+    #activite .activite-list {
+        flex-wrap: wrap;
+        height: auto;
+    }
 
-footer {
-    justify-content: space-between;
-}
+    #activite .activite-list .column {
+        width: 48%;
+    }
 
-footer .column {
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-}
+    footer
+    {
+        justify-content: space-between;
+    }
+
+    footer .column 
+    {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
 
 @media screen and (max-width: 768px)
@@ -558,4 +560,5 @@ footer .column {
         flex-direction: column;
         width: 100%;
     }
+    
 }
