@@ -1,0 +1,531 @@
+/* REGLES GLOBALES */
+
+/* import police raleway depuis google */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+
+
+html /*applique la police à toute la page*/
+{
+font-family: 'Raleway', sans-serif;
+}
+
+body 
+{
+    overflow-x: hidden;
+    font-size: 18px;
+}
+
+h1 
+{
+    font-size: 150%;
+}
+
+h2 
+{
+    font-size: 120%;
+    ;
+}
+
+
+/* HEADER LOGO ET MENU NAVIGATION */
+
+header 
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+}
+
+header #logo 
+{
+    padding: 25px 0px;
+}
+
+header #logo img 
+{
+    width: 150px;
+}
+
+header nav ul 
+{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+header nav ul li 
+{ /* Ligne au dessus ...*/
+    padding: 50px 25px;
+    border-top: 3px solid transparent;
+    margin: 0px 20px 0px 20px;
+}
+
+header nav ul li:hover 
+{ /* ... qui devient bleue au survol */
+    border-color: #0065FC;
+}
+
+header nav ul li a 
+{
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul li:hover a 
+{  /* texte bleu quand on survole*/
+    color: #0065FC;
+}
+
+
+/* TITRES ET BARRE DE RECHERCHES */
+
+h1 
+{
+    margin-bottom: 0px
+}
+
+.subtitle
+{
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.searchbox 
+{       /* Bordure grise arrondie qui entoure l'icone maps */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    border-radius: 10px;
+    border: 1px solid #f2f2f2;
+}
+
+.searchbox .fa-map-marker-alt 
+{     /* On colorie le fond */
+    display: flex;
+    justify-content: center;        /*Centre l'icone h*/
+    align-items: center;            /*Centre l'icone v*/
+    background-color: #F2F2F2;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+.searchbox input 
+{              /* style de la zone de saisie  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;;
+    width: 200px;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    border:none;
+    padding-left: 20px;
+    font-size:large;
+    outline: none;
+    font-weight: bold;
+}
+
+.searchbox button 
+{            /* Style du bouton rechercher */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0065FC;
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    border: 0px;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+/* FILTRES */
+
+#filter {
+    display: flex;
+    align-items: center;
+}
+
+.filtre /* Dessine la bordure grise autour des filtres */
+{
+    box-sizing: border-box; /* Padding inclus pour que ça soit plus simple, lol */
+    display: inline-flex; 
+    align-items: center; /* Centre verticalement */
+    height: 40px;
+    padding: 0px 15px 0px 0px;
+    border-radius: 20px; /* moitié hauteur */
+    border: 3px solid #F2F2F2;
+    font-family: Arial;
+    font-weight: bold;
+    justify-content: space-between;
+  }
+
+.filtre i /* Propriétés des icones des filtres (par dessus la box du dessus */
+{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    width: 40px;
+    height: 40px;
+    margin-left: -2px; /* ramène l'icone à gauche 2px = border du dessus */
+    border-radius: 50%;
+    margin-right: 10px; /* espace texte icone */
+    display: flex;
+    align-items: center; /* centre vertical */
+    justify-content: center; /* centre horizontal */
+}
+
+
+.filtre ul
+{
+    display: inline-flex;
+}
+
+.filtre:hover /* Filtres changent au survol */
+{
+    transition: background-color 0.5s;
+    background-color: #0065FC;
+    color: white;
+    transform: scale(1.15);
+}
+
+/* INFOS */
+
+
+.info .fas.fa-info
+{
+    color: #0065FC;
+    border: 2px solid #F2F2F2;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px; /* espace texte icone */
+    display: inline-flex; 
+    align-items: center; /* centre vertical */
+    justify-content: center; /* centre horizontal */
+}
+
+
+/* HÉBERGEMENTS */
+
+#hebergement {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hebergement section h2 {
+    margin-top: 0px;
+}
+
+#hebergement section .container {
+    background-color: #F2F2F2;
+    padding: 20px 20px 10px 20px;
+    border-radius: 20px;
+    height: auto;
+    box-sizing: content-box;
+}
+
+#hebergement section .container2
+ {
+    background-color: #F2F2F2;
+    padding: 20px 20px 10px 20px;
+    border-radius: 20px;
+    height: auto;
+    box-sizing: content-box;
+}
+
+.hebergement-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hebergement-list a {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.hebergement-list a article {
+    background-color: white;
+    padding: 6px;
+    border-radius: 25px;
+    height: 100%;
+}
+
+.hebergement-list article 
+{
+    box-shadow: 5px 5px 5px 0px #E2E2E2;
+}
+
+.hebergement-list a article:hover {
+    box-shadow: 5px 5px 5px 0px #E2E2E2;
+    transform: scale(1.03);
+}
+
+.hebergement-list a article .fa-star.bleu {
+    color: #0065FC;
+}
+
+.hebergement-list a article .fa-star.gris {
+    color: #F2F2F2;
+}
+
+.hebergement-list a article img {
+    width: 100%;
+    height: 200px;
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+}
+
+.hebergement-list a {
+    color: black;
+    text-decoration: none;
+}
+
+.hebergement-list a article .article-content {
+    padding: 10px 10px 0px 10px;
+}
+
+.hebergement-list a article .article-content h3,
+.hebergement-list a article .article-content p {
+    margin: 6px;
+}
+
+.hebergement-list a article .article-content .price.bold {
+    font-weight: bold;
+}
+
+/* EN SAVOIR PLUS */ 
+
+#more article
+{
+    box-shadow: none;
+}
+
+/* VILLE ACTUELLE */
+
+.villeactuelle {
+    width: 60%;
+}
+
+/* POPULAIRE */
+
+#hebergement .populaire .chart-icone {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#hebergement .populaire {
+    width: 35%;
+    position: relative;
+}
+
+#hebergement .populaire .hebergement-list {
+    flex-direction: column;
+}
+
+#hebergement .populaire .hebergement-list a {
+    width: 100%;
+}
+
+#hebergement .populaire .hebergement-list a article {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#hebergement .populaire .hebergement-list a article img {
+    border-radius: 25px 0px 0px 25px;
+    width: 35%;
+}
+
+#hebergement .populaire .hebergement-list a article .article-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+/* ACTIVITES */
+
+#activite {
+    margin-bottom: 60px;
+}
+
+.activite-list {
+    display: flex;
+    justify-content: space-between;
+    height:600px;
+}
+
+.activite-list .column {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+.activite-list .column article img {
+    width: 100%;
+    height: calc(100% - 67px);
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.activite-list .column article {
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px #E0E0E0;
+    border-radius: 25px;
+}
+
+.activite-list .column article h3 {
+    padding: 10px;
+    margin: 0px;
+}
+
+.activite-list .column.double article {
+    height: 48%;
+}
+
+.activite-list article:hover
+{
+    transform: scale(1.03);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #F2F2F2;
+    margin: 0px 0px;
+    white-space: nowrap;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .column {
+    width: 30%;
+}
+
+footer .column ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+footer .column ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 35px;
+}
+
+@media screen and (max-width: 768px)
+{
+    
+    header {
+        flex-direction: column;
+    }
+    
+    header #logo {
+        margin: auto;
+    }
+    
+    header nav ul {
+        margin: 0px -20px;
+        padding: 0;
+    }
+    
+    header nav ul li {
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+        margin: 0px;
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    
+    .searchbox button {
+        border-radius: 15px;
+    }
+    
+    .searchbox button span {
+        display: none;
+    }
+    
+    .searchbox button .fa-search {
+        display: block;
+    }
+    
+    #filter {
+        flex-direction: row;
+        align-items: flex-start;
+        margin: -18px 0px 0px 0px;
+    }
+
+    #filter ul{
+        padding: 0px 5px 0px 40px;
+
+    }
+
+    #hebergement {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-around;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    #hebergement section .container
+    {
+        background-color: #FFFFFF;
+    }
+    #hebergement .villeactuelle 
+    {
+        width:100%;
+        order: 2;
+    }
+    
+    #hebergement .populaire 
+    {
+        order: 1;
+        width: 100%;
+    }
+    
+    #hebergement .villeactuelle .hebergement-list {
+        flex-direction: column;
+    }
+    
+    #hebergement .villeactuelle .hebergement-list a {
+        width: 100%;
+    }
+    
+    #activite .activite-list .column {
+        width: 100%;
+    }
+    
+.activite-list
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height:25%;
+}
+
+    .activite-list .column article,
+    .activite-list .column.double article {
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}
