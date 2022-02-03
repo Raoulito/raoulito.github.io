@@ -3,7 +3,6 @@
 /* import police raleway depuis google */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
 
-
 html /*applique la police à toute la page*/
 {
 font-family: 'Raleway', sans-serif;
@@ -13,6 +12,7 @@ body
 {
     overflow-x: hidden;
     font-size: 18px;
+
 }
 
 h1 
@@ -26,6 +26,10 @@ h2
     ;
 }
 
+main{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 /* HEADER LOGO ET MENU NAVIGATION */
 
@@ -33,7 +37,8 @@ header
 {
     display: flex;
     justify-content: space-between;
-    padding: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 header #logo 
@@ -161,6 +166,8 @@ h1
     padding: 0px 15px 0px 0px;
     border-radius: 20px; /* moitié hauteur */
     border: 3px solid #F2F2F2;
+    margin-right: 15px;
+    margin-bottom: 10px;
     font-family: Arial;
     font-weight: bold;
     justify-content: space-between;
@@ -184,6 +191,7 @@ h1
 .filtre ul
 {
     display: inline-flex;
+    padding: 10px;
 }
 
 .filtre:hover /* Filtres changent au survol */
@@ -191,8 +199,10 @@ h1
     transition: background-color 0.5s;
     background-color: #0065FC;
     color: white;
+
     transform: scale(1.15);
 }
+
 
 /* INFOS */
 
@@ -370,6 +380,7 @@ h1
     flex-direction: column;
     justify-content: space-between;
     border-radius: 25px;
+    padding-top: 10px;
 }
 
 .activite-list .column article img {
@@ -402,16 +413,16 @@ h1
 /* FOOTER */
 
 footer {
+    width: 100%;
     background-color: #F2F2F2;
-    margin: 0px 0px;
     white-space: nowrap;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
 
 footer .column {
     width: 30%;
+    padding:20px;
 }
 
 footer .column ul {
@@ -427,7 +438,6 @@ footer .column ul li a {
 
 @media screen and (max-width:992px) and (min-width:769px)
 {
-
     body {
         overflow-x: hidden;
     }
